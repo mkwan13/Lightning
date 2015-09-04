@@ -12,6 +12,7 @@ void setup()
   	size(300,300);
   	noLoop();
 }
+
 void draw()
 {
 	background(bg);
