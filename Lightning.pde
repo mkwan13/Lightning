@@ -9,8 +9,8 @@ void setup()
 	strokeWeight(1);
 	bg = loadImage("image.jpg");
   	size(300,300);
-  	// noLoop();
 }
+
 void draw()
 {
 	background(bg);
@@ -25,14 +25,13 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-
 }
+
 void mousePressed()
 {
 	startX = 151;
 	startY = 135;
 	endX = 151;
 	endY = 135;
-	redraw();
 }
 

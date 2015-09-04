@@ -35,8 +35,7 @@ public void draw()
 	while(endY < 300)
 	{
 		endX = startX + (int)(Math.random()*11)-5;
-		endY = startY + (int)(Math.random()*9);		
-		
+		endY = startY + (int)(Math.random()*9);				
 		line(startX, startY, endX, endY);
 		stroke(255,255,51);
 		startX = endX;
@@ -50,7 +49,7 @@ public void mousePressed()
 	startY = 135;
 	endX = 151;
 	endY = 135;
-	redraw();
+	// redraw();
 }
 
   static public void main(String[] passedArgs) {
