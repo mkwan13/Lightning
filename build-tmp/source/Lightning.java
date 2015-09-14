@@ -25,8 +25,8 @@ public void setup()
 	strokeWeight(1);
 	bg = loadImage("image.jpg");
   	size(300,300);
-  	// noLoop();
 }
+
 public void draw()
 {
 	background(bg);
@@ -41,15 +41,14 @@ public void draw()
 		startX = endX;
 		startY = endY;
 	}
-
 }
+
 public void mousePressed()
 {
 	startX = 151;
 	startY = 135;
 	endX = 151;
 	endY = 135;
-	// redraw();
 }
 
   static public void main(String[] passedArgs) {
