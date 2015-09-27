@@ -22,36 +22,33 @@ PImage bg;
 
 public void setup()
 {
-	strokeWeight(3);
-	// background(0);
+	strokeWeight(1);
 	bg = loadImage("image.jpg");
   	size(300,300);
-  	noLoop();
 }
+
 public void draw()
 {
 	background(bg);
-	line(startX, startY, endX, endY);
-	stroke((int)(Math.random()*256));
+	stroke(255,255,51);
 		
 	while(endY < 300)
 	{
-		endX = startX + (int)(Math.random()*18)-9;
-		endY = startY + (int)(Math.random()*9);		
+		endX = startX + (int)(Math.random()*11)-5;
+		endY = startY + (int)(Math.random()*9);				
+		line(startX, startY, endX, endY);
+		stroke(255,255,51);
 		startX = endX;
 		startY = endY;
-		line(startX, startY, endX, endY);
-		stroke((int)(Math.random()*256));
 	}
-
 }
+
 public void mousePressed()
 {
 	startX = 151;
 	startY = 135;
 	endX = 151;
 	endY = 135;
-	redraw();
 }
 
   static public void main(String[] passedArgs) {
